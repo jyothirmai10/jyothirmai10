@@ -1,0 +1,97 @@
+:root{
+font-size: 16px;
+display: flex;
+flex-wrap: wrap;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:"Playfair Display", serif;
+}
+.container{
+	display:block;
+	margin:3vw;
+	
+}
+.card{
+	width:90vw;
+	background-image:url("../ASSIGNMENT 3/five.JPG");
+	border: 1px solid:#001f3f;
+	border-radius: 10px;
+	box-shadow: 0px 3px 20px 2px #FFD700;
+	font-size: 1rem;
+   color: #228B22;
+
+
+}
+/*	background-image: url("../ASSIGNMENT 3/1.JPG"); 
+	display:block;
+	width:90vw;
+	background-color: #3D9970;
+    border: 1px solid:#001f3f;
+    border-radius: 10px;
+  box-shadow: 0px 3px 20px 2px #0074D9;
+   font-size: 1rem;
+   color: #85144b;
+} */
+.intro{
+font-size: 1rem;
+	color: #001f3f;
+	width:90vw;
+	padding: 1vw;
+	text-align: justify;
+}
+ .container button{
+	background-color: green;
+	color: white;
+	border-radius:10px;
+	cursor: pointer;
+	height: 5vh;
+}
+button:hover{
+	background-color: salmon;
+}
+ button{
+ 	animation: blinker 2s ;
+ 	overflow: hidden; 
+ /*	white-space: nowrap; */
+ }
+ @keyframes blinker {
+ 	from {
+ 		width:0;
+ 	}
+ 	to{
+ 		width:20vw;
+ 	}
+ }
+.technologies{
+	padding:2vh;
+	text-align:center;
+
+}
+.technologies .child{
+	display:inline-block;
+	height:10vh;
+	width: 30vw;
+}
+.technologies .child2{
+	display:inline-block;
+	height:10vh;
+	width: 30vw;
+}
+.technologies .child3{
+	display:inline-block;
+	height:10vh;
+	width:30vw;
+}   
+
+@media only screen and (max-width: 760px){
+	/*.technologies img{
+		flex-direction: row;
+
+	} */
+	.technologies img{
+		width:30vw;
+		height: 20vh;
+	}
+}
